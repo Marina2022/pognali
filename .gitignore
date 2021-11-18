@@ -1,3 +1,7 @@
+.gitignore
+.editorconfig
+
+
 # Logs
 logs
 *.log
