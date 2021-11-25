@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  padding: 0 25px;
+}
+
+.page,
+.page__body {
+  margin: 0;
+}
+.page__body {
+  font-family: "blogger sans", sans-serif;
+  color: $white-text;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  &--form {
+    color: $grey-text;
+  }
+  &--catalog {
+    color: $grey-text;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+.no-style {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.section-title {
+  color: $title-color;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 40px;
+  &--form {
+    color: #1d2e5b;
+  }
+}
+
+.page-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  color: #ffffff;
+}
