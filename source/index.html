@@ -11,18 +11,31 @@
     <header class="page-header">
       <div class="container">
         <nav class="main-nav">
-          <div class="page-header__logo logo">
-            <a href="#" class="logo__link"
-              ><img src="" alt="" class="logo__img"
-            /></a>
+          <div class="header-logo-wrapper">
+            <a href="#" class="page-header__logo logo">
+              <picture>
+                <source
+                  class="page-header__logo-img page-header__logo-img--desktop"
+                  media="(min-width: 1440px)"
+                  srcset="img/logo/logo-desktop.png"
+                />
+                <source
+                  class="page-header__logo-img page-header__logo-img--tablet"
+                  media="(min-width: 768px)"
+                  srcset="img/logo/logo-tablet.png"
+                />
+
+                <img
+                  class="page-header__logo-img page-header__logo-img--mob"
+                  src="img/logo/logo-mobile.png"
+                  alt=""
+                />
+              </picture>
+            </a>
+
+            <button class="header__toggle-button"></button>
           </div>
-          <button class="header__toggle-button button menu-toggle"></button>
-          <div class="user-nav header__user-nav">
-            <button class="header__auth-button auth-button">Авторизация</button>
-            <a href="tel:88005558628" class="phone-link"> </a>
-            <a href="email:mail@htmlacademy.ru" class="email-link"></a>
-          </div>
-          <ul class="header__site-menu site-menu__list">
+          <ul class="header__site-menu site-menu__list no-style">
             <li class="site-menu__item">
               <a href="#" class="site-menu__link">О сервисе</a>
             </li>
@@ -33,28 +46,52 @@
               <a href="catalog.html" class="site-menu__link">Попутчики</a>
             </li>
           </ul>
+          <div class="user-nav header__user-nav">
+            <a
+              href="tel:88005558628"
+              class="auth-button__link auth-button__link--phone"
+            >
+            </a>
+            <a
+              href="email:mail@htmlacademy.ru"
+              class="auth-button__link auth-button__link--email"
+            ></a>
+            <button class="header__auth-button auth-button">Авторизация</button>
+          </div>
+
           <div class="header__contacts contacts">
-            <a href="tel:88005558628" class="phone-link"
+            <a href="tel:88005558628" class="contacts__link contacts__link"
               ><span class="header__phone-text">8 800 555-86-28</span>
             </a>
-            <a href="email:mail@htmlacademy.ru" class="email-link"
+            <a
+              href="email:mail@htmlacademy.ru"
+              class="contacts__link contacts__link"
               ><span class="header__email-text">mail@htmlacademy.ru</span></a
             >
           </div>
-          <ul class="header__socials socials">
+          <ul class="header__socials socials no-style">
             <li class="socials__item">
               <a href="" class="socials__link"
-                ><img src="" alt="" class="socials__img socials__img--fb"
+                ><img
+                  src="img/icons/icon_fb.svg"
+                  alt=""
+                  class="socials__img socials__img--fb"
               /></a>
             </li>
             <li class="socials__item">
               <a href="" class="socials__link"
-                ><img src="" alt="" class="socials__img socials__img--vk"
+                ><img
+                  src="img/icons/icon_vk.svg"
+                  alt=""
+                  class="socials__img socials__img--vk"
               /></a>
             </li>
             <li class="socials__item">
               <a href="" class="socials__link"
-                ><img src="" alt="" class="socials__img socials__img--insta"
+                ><img
+                  src="img/icons/icon_insta.svg"
+                  alt=""
+                  class="socials__img socials__img--insta"
               /></a>
             </li>
           </ul>
@@ -399,7 +436,6 @@
         </div>
       </div>
     </footer>
-
     <div class="tariffs-modal">
       <h2 class="title modal__title section-title">Бизнес-тарифы</h2>
       <ul class="modal-tariffs__list">
@@ -422,5 +458,6 @@
       </ul>
       <button class="button button--modal">Закрыть окно</button>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
