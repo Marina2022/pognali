@@ -1,11 +1,15 @@
 .page-header {
-  background-color: $dark-back;
-  padding: 19px 0 60px;
+  background-color: $blue-dark;
+  padding-top: 19px;
   &--mobile-open {
     background-color: #ffffff;
   }
   @media (min-width: $tablet) {
     padding-top: 39px;
+    background-color: $blue;
+  }
+  @media (min-width: $desktop) {
+    background-color: $blue-dark;
   }
 }
 .page-header__logo-img {

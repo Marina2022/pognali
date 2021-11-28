@@ -100,23 +100,40 @@
     </header>
     <main class="main-part">
       <section class="intro">
-        <div class="container">
-          <h1 class="main-title">В путешествие с крутыми попутчиками!</h1>
-          <div class="user-nav intro__user-nav mobile-visible">
-            <a href="tel:88005558628" class="phone-link"> </a>
-            <a href="email:mail@htmlacademy.ru" class="email-link"></a>
-            <button class="auth-button">Авторизация</button>
+        <!-- <div class="container"> -->
+        <div class="intro-wrapper">
+          <div class="intro__title-part">
+            <h1 class="main-title">
+              В путешествие с&nbsp;крутыми попутчиками!
+            </h1>
+          </div>
+          <div class="intro__quote-block quote-block">
+            <div class="user-nav intro__user-nav mobile-visible">
+              <a
+                href="tel:88005558628"
+                class="auth-button__link auth-button__link--phone"
+              >
+              </a>
+              <a
+                href="email:mail@htmlacademy.ru"
+                class="auth-button__link auth-button__link--email"
+              ></a>
+              <button class="auth-button">Авторизация</button>
+            </div>
+            <div class="quote-block__wrapper">
+              <blockquote class="intro__slogan">
+                «Лучшее приложение, что я видел в жизни!»
+              </blockquote>
+              <div class="intro__quote-author">
+                Мурат Эльтазин главный редактор газеты «гаджетлайф»
+              </div>
+            </div>
           </div>
         </div>
+        <!-- </div> -->
       </section>
-      <section class="steps">
+      <!-- <section class="steps">
         <div class="container">
-          <blockquote class="slogan">
-            «Лучшее приложение, что я видел в жизни!»
-          </blockquote>
-          <div class="quote-author">
-            Мурат Эльтазин главный редактор газеты «гаджетлайф»
-          </div>
           <ul class="intro__action-order action-order">
             <li class="action-order__item">
               <div class="action-order__text">Выберите направление</div>
@@ -403,7 +420,7 @@
           <div class="map address__map"></div>
         </div>
       </section>
-      <div class="section map"></div>
+      <div class="map"></div> -->
     </main>
     <footer class="main-footer">
       <div class="container">
