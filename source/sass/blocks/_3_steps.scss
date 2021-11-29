@@ -1,5 +1,79 @@
 .steps {
+  position: relative;
   padding: 28px 0 39px;
-
   background-color: $main-back;
+}
+.action-order {
+  margin-top: -108px;
+  border-radius: 10px;
+  overflow: hidden;
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -168px;
+  }
+  @media (min-width: 1440px) {
+    margin-top: -257px;
+  }
+}
+.action-order__item {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: $blue-dark;
+  width: 270px;
+  min-height: 80px;
+  padding: 22px 24px;
+  display: flex;
+  justify-content: space-between;
+
+  &:nth-child(1) {
+    background-color: #ff8d30;
+  }
+  &:nth-child(2) {
+    background-color: #ffa530;
+  }
+  &:nth-child(3) {
+    background-color: #ffbd30;
+  }
+  &:nth-child(4) {
+    background-color: #ffd74b;
+  }
+
+  @media (min-width: 768px) {
+    width: 50%;
+    flex-direction: column;
+    min-height: 140px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 25%;
+    flex-direction: row;
+    min-height: 107px;
+  }
+}
+.action-order__text {
+  max-width: 150px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 18px;
+  @media (min-width: 768px) {
+    max-width: 200px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+.action-order__number {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 18px;
+  @media (min-width: 768px) {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  @media (min-width: 1440px) {
+    font-size: 24px;
+    line-height: 24px;
+  }
 }

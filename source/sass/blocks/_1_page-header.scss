@@ -1,6 +1,6 @@
 .page-header {
   background-color: $blue-dark;
-  padding-top: 19px;
+  padding-top: 22px;
   &--mobile-open {
     background-color: #ffffff;
   }
@@ -49,7 +49,8 @@
   width: 25px;
   height: 20px;
   display: inline-block;
-  background: transparent url(../img/icon_menu_mobile.png) no-repeat;
+  background: transparent url(../img/icon_menu_mobile.png) center center
+    no-repeat;
   border: none;
   @media (min-width: $desktop) {
     display: none;
@@ -130,6 +131,7 @@
   border-radius: 25px;
   border: none;
   outline: none;
+  cursor: pointer;
   @media (min-width: $tablet) {
     width: 188px;
   }

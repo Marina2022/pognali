@@ -1,22 +1,35 @@
 .intro {
-  position: relative;
   padding-top: 65px;
-  background: url("../img/bg/traveller-illustration-mobile.svg") center 196px
-      no-repeat,
-    $blue-dark url("../img/bg/globe-back-mobile.png") center -30px no-repeat;
+  background: url("../img/bg/traveller-illustration-mobile.svg") center bottom
+      316px no-repeat,
+    $blue-dark url("../img/bg/globe-back-mobile.png") center bottom 110px/100%
+      100% no-repeat;
   @media (min-width: $tablet) {
-    background: url("../img/bg/traveller-illustration-mobile.svg") center bottom
-        140px no-repeat,
-      $blue url("../img/bg/globe-back-tablet.png") center bottom no-repeat;
-    padding-bottom: 620px;
+    background: url("../img/bg/traveller-illustration-tablet.svg") left #{calc(
+          75% - 50px
+        )} bottom 140px no-repeat,
+      $blue url("../img/bg/globe-back-tablet.png") center bottom/100% 65%
+        no-repeat;
+    padding-bottom: 350px;
     padding-top: 72px;
   }
   @media (min-width: $desktop) {
     background: url("../img/bg/traveller-illustration-desktop.svg") center
         bottom no-repeat,
-      $blue url("../img/bg/globe-back-desktop.png") center bottom no-repeat;
+      $blue-dark url("../img/bg/globe-back-desktop.png") left #{calc(
+          40% - 150px
+        )} bottom/100% 80% no-repeat;
     padding-bottom: 331px;
     padding-top: 110px;
+  }
+
+  .intro-wrapper {
+    @media (min-width: $desktop) {
+      display: flex;
+      width: 1230px;
+      justify-content: space-between;
+      margin: 0 auto;
+    }
   }
 
   .auth-button {
@@ -54,14 +67,23 @@
 }
 .intro__title-part {
   margin-bottom: 265px;
+  @media (min-width: $tablet) {
+    margin-bottom: 86px;
+  }
+  @media (min-width: $desktop) {
+    margin-bottom: 0;
+    .container {
+      padding: 0;
+    }
+  }
 }
 
 .main-title {
+  padding: 0;
   font-weight: bold;
   font-size: 36px;
   line-height: 40px;
   color: #ffffff;
-  max-width: 80%;
   margin: 0 auto;
   text-align: center;
   @media (min-width: $tablet) {
@@ -78,32 +100,43 @@
   }
 }
 
+.intro-quote-container {
+  width: 295px;
+  margin: 0 auto;
+  @media (min-width: $tablet) {
+    padding-left: 72px;
+    width: 768px;
+    margin: 0 auto;
+  }
+  @media (min-width: $desktop) {
+    padding-left: 0;
+    width: auto;
+  }
+}
+
 .intro__quote-block {
+  padding-left: 25px;
   padding-top: 50px;
   position: relative;
   background-color: $blue-dark;
   .quote-block__wrapper {
-    max-width: 161px;
-    margin-left: 25px;
+    max-width: 186px;
     padding-bottom: 109px;
     @media (min-width: $tablet) {
       max-width: 264px;
+      padding-bottom: 0;
+    }
+    @media (min-width: $desktop) {
+      padding-bottom: 0;
     }
   }
 
   @media (min-width: $tablet) {
-    position: absolute;
-    left: 72px;
-    top: 355px;
     padding: 0;
     background-color: transparent;
   }
 
   @media (min-width: $desktop) {
-    position: absolute;
-    right: 60px;
-    top: 125px;
-    left: initial;
   }
 }
 
