@@ -44,16 +44,6 @@
   &--catalog {
     color: $grey-text;
   }
-  // если захочешь фоны без проблем, то вот они:
-  // background-color: #edeff6;
-  // max-width: 320px;
-  // margin: 0 auto;
-  // @media (min-width: $tablet) {
-  //   max-width: 768px;
-  // }
-  // @media (min-width: $desktop) {
-  //   max-width: 1440px;
-  // }
 }
 
 h1,
@@ -120,6 +110,7 @@ p {
   border-radius: 10px;
   text-align: left;
   text-decoration: none;
+  padding-top: 20px;
 
   :after {
     content: "";
