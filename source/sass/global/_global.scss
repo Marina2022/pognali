@@ -93,6 +93,10 @@ p {
   &--form {
     color: #1d2e5b;
   }
+  @media (min-width: $tablet) {
+    font-size: 45px;
+    line-height: 45px;
+  }
 }
 
 .page-title {
@@ -100,4 +104,79 @@ p {
   font-size: 36px;
   line-height: 36px;
   color: #ffffff;
+}
+
+.button {
+  position: relative;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: #1d2e5b;
+  background-color: $primary-color;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  padding: 22px 23px;
+  border-radius: 10px;
+  text-align: left;
+  text-decoration: none;
+
+  :after {
+    content: "";
+    width: 13px;
+    height: 13px;
+    background: url(../img/icons/button-triangle-mobile.svg) no-repeat;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+  }
+  @media (min-width: $tablet) {
+    padding: 27px 28px 28px 32px;
+    font-size: 24px;
+    line-height: 24px;
+    border-radius: 20px;
+    :after {
+      content: "";
+      width: 14px;
+      height: 14px;
+      background: url(../img/icons/button-triangle-tablet.svg) no-repeat;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 24px;
+    }
+  }
+}
+
+.section-prompt {
+  font-weight: bold;
+}
+.progress {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.progress__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.progress__number {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  padding-bottom: 2px;
+  border-bottom: 1px rgba(#fff, 0.3) solid;
+}
+.progress__level {
+  font-size: 14px;
+  line-height: 14px;
 }

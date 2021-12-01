@@ -160,196 +160,333 @@
           </ul>
         </div>
       </section>
-      <!-- <section class="about">
+      <section class="about">
         <div class="container">
-          <h2 class="about__title section-title">О сервисе</h2>
-          <p class="about__text">
-            Любое путешествие веселее с попутчиками, которые на одной волне с
-            тобой! Делитесь своими идеями путешествий и черпайте вдохновение в
-            чужих.
-          </p>
-          <p class="about__prompt section-prompt">
-            А если найдете кого-то близкого по духу — скорее зовите в совместный
-            трип!
-          </p>
-          <button class="button about__button mobile-hidden">Подробнее</button>
-          <img src="" alt="" class="about__img" />
+          <div class="about__wrapper">
+            <div class="about__left-wrapper">
+              <h2 class="about__title section-title">О сервисе</h2>
+              <p class="about__text">
+                Любое путешествие веселее с попутчиками, которые на одной
+                волне&nbsp; с тобой! Делитесь своими идеями путешествий и
+                черпайте вдохновение в чужих.
+              </p>
+              <p class="about__prompt section-prompt">
+                А если найдете кого-то близкого по духу — скорее зовите в
+                совместный трип!
+              </p>
+              <button class="button about__button mobile-hidden">
+                <span class="button-text">Подробнее</span>
+              </button>
+            </div>
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="img/about_desktop.png"
+              />
+              <source
+                class="about__img--tablet"
+                media="(min-width: 768px)"
+                srcset="img/about_tablet.png"
+              />
+              <img src="img/about_desktop.png" alt="" class="about__img" />
+            </picture>
+          </div>
         </div>
-      </section> -->
-      <!-- <section class="directions">
-        <div class="container">
-          <h2 class="title directions__title section-title">Направления</h2>
-          <p class="directions__text section-text">
-            Мы не продаем туры и ничего не рекламируем. Люди сами пишут о
-            странах, куда хотели бы отправиться и чем можно там заняться.
-          </p>
-          <ul class="directions__list">
+      </section>
+      <section class="directions">
+        <div class="container directions__container">
+          <div class="direction__first-text-wrapper">
+            <h2 class="title directions__title section-title">Направления</h2>
+            <p class="directions__text section-text">
+              Мы не продаем туры и ничего не рекламируем. Люди сами пишут о
+              странах, куда хотели бы отправиться и чем можно там заняться.
+            </p>
+          </div>
+          <ul class="directions__list no-style">
             <li class="directions__item directions-item">
-              <div class="directions__desc">
-                <h3 class="directions-item__title">Таиланд</h3>
-                <div class="directions-item__subtitle">Джунгли зовут!</div>
+              <div class="directions__desc desc-1">
+                <div class="direction__text-wrapper">
+                  <h3 class="directions-item__title">Таиланд</h3>
+                  <div class="directions-item__subtitle">Джунгли зовут!</div>
+                </div>
                 <span class="directions__user-number">18321</span>
               </div>
-              <img src="" alt="" class="directions__photo" />
+              <picture>
+                <source
+                  media="(min-width:768px)"
+                  srcset="img/dir-desktop-1.jpg"
+                />
+                <img
+                  src="img/direction-mobile-1.jpg"
+                  alt=""
+                  class="directions__photo"
+                />
+              </picture>
               <img src="" alt="" class="directions__flag" />
             </li>
             <li class="directions__item directions-item">
-              <div class="directions__desc">
-                <h3 class="directions-item__title">Франция</h3>
-                <div class="directions-item__subtitle">Трэ бьен, манифик!</div>
-                <span class="directions__number">12518</span>
-              </div>
-              <img src="" alt="" class="directions__photo" />
-              <img src="" alt="" class="directions__flag" />
-            </li>
-            <li class="directions__item directions-item">
-              <div class="directions__desc">
-                <h3 class="directions-item__title">Чехия</h3>
-                <div class="directions-item__subtitle">
-                  Закоулки старой Европы
+              <div class="directions__desc desc-2">
+                <div class="direction__text-wrapper">
+                  <h3 class="directions-item__title">Франция</h3>
+                  <div class="directions-item__subtitle">
+                    Трэ бьен, манифик!
+                  </div>
                 </div>
-
+                <span class="directions__user-number">12518</span>
+              </div>
+              <picture>
+                <source
+                  media="(min-width:768px)"
+                  srcset="img/dir-desktop-2.jpg"
+                />
+                <img
+                  src="img/direction-mobile-2.jpg"
+                  alt=""
+                  class="directions__photo"
+                />
+              </picture>
+              <img src="" alt="" class="directions__flag" />
+            </li>
+            <li class="directions__item directions-item">
+              <div class="directions__desc desc-3">
+                <div class="direction__text-wrapper">
+                  <h3 class="directions-item__title">Чехия</h3>
+                  <div class="directions-item__subtitle">
+                    Закоулки старой Европы
+                  </div>
+                </div>
                 <span class="directions__user-number">5326</span>
               </div>
-              <img src="" alt="" class="directions__photo" />
+              <picture>
+                <source
+                  media="(min-width:768px)"
+                  srcset="img/dir-desktop-3.jpg"
+                />
+                <img
+                  src="img/direction-mobile-3.jpg"
+                  alt=""
+                  class="directions__photo"
+                />
+              </picture>
               <img src="" alt="" class="directions__flag" />
             </li>
           </ul>
-          <a href="form.html" class="button">Показать все</a>
-        </div>
-      </section> -->
-      <!-- <section class="companions">
-        <div class="container">
-          <h2 class="title companion__title section-title">Попутчики</h2>
-          <p class="section-text companions__text">
-            Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
-            Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
-          </p>
-          <div class="companions__prompt section-prompt">
-            Теперь можно легко найти единомышленников!
+          <div class="directions__button-wrapper">
+            <button href="form.html" class="button directions__button">
+              <span> Показать все </span>
+            </button>
           </div>
-          <ul class="companions__list">
-            <li class="companions__item companions-item">
-              <img class="companions-item__photo" src="" alt="" />
-              <div class="companions-item__desc">
-                <h3 class="companions-item__name companions-item__name--red">
-                  Таня Фирсова
-                </h3>
-                <div class="companions-item__tags">
-                  #ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи
-                </div>
-                <ul class="companions-item__icons-list">
-                  <li class="companions-item__item">
-                    <img
-                      src=""
-                      alt=""
-                      class="
-                        companions-item__icon companions-item__icon--active
-                      "
-                    />
-                  </li>
-                  <li class="companions-item__item">
-                    <img src="" alt="" class="companions-item__icon" />
-                  </li>
-                  <li class="companions-item__item">
-                    <img src="" alt="" class="companions-item__icon" />
-                  </li>
-
-                  <li class="companions-item__item">
-                    <img src="" alt="" class="companions-item__icon" />
-                  </li>
-                </ul>
-                <ul class="companions__flags">
-                  <li class="companions__flag">
-                    <img src="" alt="" class="companions__flag-img" />
-                  </li>
-                  <li class="companions__flag">
-                    <img src="" alt="" class="companions__flag-img" />
-                  </li>
-                  <li class="companions__flag">
-                    <img src="" alt="" class="companions__flag-img" />
-                  </li>
-                </ul>
-              </div>
-              <div class="progress">
-                <span class="progress__namber">80</span>
-                <span class="progress__level">level</span>
-                <img
-                  class="progress-img progress-bar--80p"
-                  src="img/circle.svg"
-                  alt=""
-                />
-              </div>
-            </li>
-
-            <li class="companions__item companions-item">
-              <img class="companions-item__photo" src="" alt="" />
-              <div class="companions-item__desc">
-                <h3 class="companions-item__name companions-item__name--green">
-                  Петя Демин
-                </h3>
-                <div class="companions-item__tags">
-                  #бургер #бар #футбол #концерт #крафт
-                </div>
-                <ul class="companions-item__icons-list">
-                  <li class="companions-item__item">
-                    <img
-                      src=""
-                      alt=""
-                      class="
-                        companions-item__icon companions-item__icon--active
-                      "
-                    />
-                  </li>
-                  <li class="companions-item__item">
-                    <img
-                      src=""
-                      alt=""
-                      class="
-                        companions-item__icon companions-item__icon--active
-                      "
-                    />
-                  </li>
-                  <li class="companions-item__item">
-                    <img src="" alt="" class="companions-item__icon" />
-                  </li>
-
-                  <li class="companions-item__item">
-                    <img
-                      src=""
-                      alt=""
-                      class="
-                        companions-item__icon companions-item__icon--active
-                      "
-                    />
-                  </li>
-                </ul>
-                <ul class="companions__flags">
-                  <li class="companions__flag">
-                    <img src="" alt="" class="companions__flag-img" />
-                  </li>
-                  <li class="companions__flag">
-                    <img src="" alt="" class="companions__flag-img" />
-                  </li>
-                  <li class="companions__flag">
-                    <img src="" alt="" class="companions__flag-img" />
-                  </li>
-                </ul>
-              </div>
-              <div class="progress">
-                <span class="progress__namber">80</span>
-                <span class="progress__level">level</span>
-                <img
-                  class="progress-img progress-bar--80p"
-                  src="img/circle.svg"
-                  alt=""
-                />
-              </div>
-            </li>
-          </ul>
-          <a href="catalog" class="button">Показать всех</a>
         </div>
-      </section> -->
+      </section>
+      <section class="companions">
+        <div class="container">
+          <div class="companions__desktop-wrapper">
+            <div class="conpanions__desc-wrapper">
+              <h2 class="title companion__title section-title">Попутчики</h2>
+              <p class="section-text companions__text">
+                Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
+                Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
+              </p>
+              <div class="companions__prompt section-prompt">
+                Теперь можно легко найти единомышленников!
+              </div>
+            </div>
+            <ul class="companions__list no-style">
+              <li class="companions__item companions-item">
+                <picture class="companions-item__photo">
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="img/companion-tablet-1.jpg"
+                  />
+                  <img src="img/companion-mobile-1.jpg" alt="" />
+                </picture>
+                <div class="companions-item__desc">
+                  <h3 class="companions-item__name">
+                    <span
+                      class="
+                        companions__name-wrapper companions__name-wrapper--red
+                      "
+                    >
+                      Таня Фирсова
+                    </span>
+                  </h3>
+                  <div class="companions-item__tags">
+                    #ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи
+                  </div>
+                  <ul class="companions-item__icons-list icons-list no-style">
+                    <li class="icons-list__item icons-list__item--active">
+                      <img src="img/icons/transport-1.svg" alt="" />
+                    </li>
+                    <li class="icons-list__item">
+                      <img
+                        src="img/icons/transport-2.svg"
+                        alt=""
+                        class="icons-list__icon"
+                      />
+                    </li>
+                    <li class="icons-list__item">
+                      <img
+                        src="img/icons/transport-3.svg"
+                        alt=""
+                        class="icons-list__icon"
+                      />
+                    </li>
+
+                    <li class="icons-list__item">
+                      <img
+                        src="img/icons/transport-4.svg"
+                        alt=""
+                        class="icons-list__icon"
+                      />
+                    </li>
+                  </ul>
+                  <ul class="companions__flags no-style">
+                    <li class="companions__flag">
+                      <img
+                        src="img/flags/comp-flag-1.svg"
+                        alt=""
+                        class="companions__flag-img"
+                      />
+                    </li>
+                    <li class="companions__flag">
+                      <img
+                        src="img/flags/comp-flag-2.svg"
+                        alt=""
+                        class="companions__flag-img"
+                      />
+                    </li>
+                    <li class="companions__flag">
+                      <img
+                        src="img/flags/comp-flag-3.svg"
+                        alt=""
+                        class="companions__flag-img"
+                      />
+                    </li>
+                  </ul>
+                </div>
+                <div class="progress companions__progress">
+                  <span class="progress__number">99</span>
+                  <span class="progress__level">level</span>
+
+                  <svg
+                    class="progress__img progress-bar--99p"
+                    width="60"
+                    height="60"
+                    viewBox="0 0 60 60"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="30"
+                      cy="30"
+                      r="28"
+                      fill="black"
+                      fill-opacity="0.6"
+                      stroke="#FF8D30"
+                      stroke-width="4"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </div>
+              </li>
+
+              <li class="companions__item companions-item">
+                <picture class="companions-item__photo">
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="img/companion-tablet-2.jpg"
+                  />
+                  <img src="img/companion-mobile-2.jpg" alt="" />
+                </picture>
+                <div class="companions-item__desc">
+                  <h3 class="companions-item__name">
+                    <span
+                      class="
+                        companions__name-wrapper companions__name-wrapper--green
+                      "
+                    >
+                      Петя Демин</span
+                    >
+                  </h3>
+                  <div class="companions-item__tags">
+                    #бургер #бар #футбол #концерт #крафт
+                  </div>
+                  <ul class="companions-item__icons-list icons-list no-style">
+                    <li class="icons-list__item icons-list__item--active">
+                      <img src="img/icons/transport-1.svg" alt="" />
+                    </li>
+                    <li class="icons-list__item icons-list__item--active">
+                      <img
+                        src="img/icons/transport-2.svg"
+                        alt=""
+                        class="icons-list__icon"
+                      />
+                    </li>
+                    <li class="icons-list__item">
+                      <img
+                        src="img/icons/transport-3.svg"
+                        alt=""
+                        class="icons-list__icon"
+                      />
+                    </li>
+
+                    <li class="icons-list__item icons-list__item--active">
+                      <img
+                        src="img/icons/transport-4.svg"
+                        alt=""
+                        class="icons-list__icon"
+                      />
+                    </li>
+                  </ul>
+                  <ul class="companions__flags no-style">
+                    <li class="companions__flag">
+                      <img
+                        src="img/flags/comp-flag-4.svg"
+                        alt=""
+                        class="companions__flag-img"
+                      />
+                    </li>
+                    <li class="companions__flag">
+                      <img
+                        src="img/flags/comp-flag-5.svg"
+                        alt=""
+                        class="companions__flag-img"
+                      />
+                    </li>
+                  </ul>
+                </div>
+                <div class="progress companions__progress">
+                  <span class="progress__number">80</span>
+                  <span class="progress__level">level</span>
+                  <svg
+                    class="progress__img progress-bar--80p"
+                    width="60"
+                    height="60"
+                    viewBox="0 0 60 60"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="30"
+                      cy="30"
+                      r="28"
+                      fill="black"
+                      fill-opacity="0.6"
+                      stroke="#FF8D30"
+                      stroke-width="4"
+                      stroke-linecap="round"
+                      stroke-dashoffset="44"
+                    />
+                  </svg>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <a href="catalog" class="button companion__button"
+            ><span> Показать всех</span></a
+          >
+        </div>
+      </section>
       <!-- <section class="profile">
         <div class="container">
           <h2 class="title ptofile__title section-title">
