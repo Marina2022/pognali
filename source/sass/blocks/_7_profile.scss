@@ -13,8 +13,9 @@
 
 .ptofile__title {
   margin-bottom: 56px;
-  max-width: 110px;
+
   @include t {
+    // max-width: 110px;
     text-align: center;
     max-width: none;
     margin-bottom: 73px;
@@ -121,6 +122,7 @@
 .tariffs-list {
   z-index: 1;
   position: relative;
+  margin-bottom: 30px;
   &:before {
     @include t {
       content: "";
@@ -136,7 +138,6 @@
       height: 100px;
     }
     @include d {
-      // right: #{calc(198px / 2 - 50px)};
       width: 198px;
       height: 198px;
       right: 0;
@@ -148,6 +149,10 @@
     margin-bottom: 78px;
     max-width: 1066px;
   }
+  @include t {
+    margin-bottom: 58px;
+  }
+  margin-bottom: 30px;
 
   &:after {
     @include t {

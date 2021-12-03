@@ -223,6 +223,7 @@
 }
 
 .directions__button {
+  display: inline-block;
   width: 100%;
 
   @media (min-width: $tablet) {

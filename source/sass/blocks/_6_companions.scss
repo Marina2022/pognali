@@ -220,9 +220,13 @@
 
 .icons-list__item {
   width: 24px;
-  opacity: 0.15;
+  img {
+    opacity: 0.15;
+  }
   &--active {
-    opacity: 1;
+    img {
+      opacity: 1;
+    }
   }
 }
 
@@ -239,28 +243,17 @@
   margin-right: 10px;
 }
 
-.companions__progress {
-  position: absolute;
-  top: 17px;
-  left: 17px;
-}
-
-.progress-bar--80p {
-  stroke-dasharray: 185, 170;
-  transform: rotate(-84deg);
-}
-
-.progress-bar--99p {
-  stroke-dasharray: 170, 170;
-  stroke-dashoffset: 2;
-  transform: rotate(-84deg);
-}
-
 .companions__desktop-wrapper {
   @include d {
     display: flex;
     padding-bottom: 34px;
   }
+}
+
+.companions__progress {
+  position: absolute;
+  top: 17px;
+  left: 17px;
 }
 
 .conpanions__desc-wrapper {

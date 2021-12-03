@@ -11,6 +11,9 @@
   @media (min-width: $desktop) {
     background-color: $blue-dark;
   }
+  &--form {
+    background-color: #192144;
+  }
 }
 .page-header__logo-img {
   width: 100%;

@@ -9,3 +9,8 @@
     @content;
   }
 }
+
+@mixin but {
+  border: none;
+  outline: none;
+}

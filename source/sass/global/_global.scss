@@ -33,6 +33,7 @@
   margin: 0;
 }
 .page__body {
+  background-color: #edeff6;
   font-family: "blogger sans", sans-serif;
   color: $white-text;
   font-weight: 300;
@@ -111,6 +112,7 @@ p {
   text-align: left;
   text-decoration: none;
   padding-top: 20px;
+  display: block;
 
   :after {
     content: "";
@@ -170,4 +172,15 @@ p {
 .progress__level {
   font-size: 14px;
   line-height: 14px;
+}
+
+.progress-bar--80p {
+  stroke-dasharray: 185, 170;
+  transform: rotate(-84deg);
+}
+
+.progress-bar--99p {
+  stroke-dasharray: 170, 170;
+  stroke-dashoffset: 2;
+  transform: rotate(-84deg);
 }
