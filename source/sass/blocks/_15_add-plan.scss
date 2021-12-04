@@ -21,6 +21,9 @@
     margin-bottom: 56px;
     margin-left: 34px;
   }
+  @include d {
+    margin-left: 66px;
+  }
 }
 
 .add-plan__fieldset {
@@ -37,7 +40,7 @@
   @include d {
     width: 1320px;
     border-radius: 60px;
-    padding: 101px 158px 106px;
+    padding: 101px 158px 96px;
   }
 }
 
@@ -62,8 +65,9 @@
     margin-bottom: 38px;
   }
   @include d {
-    width: 581px;
-    margin-bottom: 55px;
+    padding-bottom: 55px;
+    margin-bottom: 0;
+    border-bottom: 1px solid #e1e3e9;
   }
 }
 
@@ -74,8 +78,37 @@
   @include t {
     width: 65px;
   }
+  @include d {
+    width: auto;
+    flex-direction: column;
+    margin-top: 200px;
+    margin-right: 207px;
+  }
 }
 .top-nav__item {
+  @include d {
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: rgb(#000000, 0.6);
+    position: relative;
+    margin-top: 27px;
+    &:first-child {
+      margin-top: 0;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      left: -36px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgb(#000000, 0.6);
+    }
+  }
+
   .top-nav__circle {
     display: block;
     width: 5px;
@@ -95,6 +128,14 @@
     .top-nav__circle {
       opacity: 1;
     }
+    @include d {
+      color: #000000;
+    }
+    &:before {
+      @include d {
+        background-color: #000000;
+      }
+    }
   }
 }
 
@@ -102,13 +143,16 @@
   margin-bottom: 10px;
 }
 .step-one__companions-wrapper {
-  // align-items: center;
   justify-content: space-between;
   display: flex;
   flex-direction: column;
   @include d {
     flex-direction: row;
     flex-wrap: wrap;
+    padding-top: 4px;
+    align-items: center;
+    padding-top: 26px;
+    padding-bottom: 19px;
   }
 }
 .add-plan__input-wrapper {
@@ -117,16 +161,27 @@
   justify-content: space-between;
   margin-bottom: 20px;
   @include t {
-    padding-top: 26px;
     border-top: 1px solid #e1e3e9;
+    padding-top: 26px;
+  }
+  @include d {
+    border-top: none;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 0;
+    margin-bottom: 14px;
   }
   &--one {
     @include t {
       order: -2;
-      width: 475px;
+      width: 100%;
+      margin-bottom: 34px;
     }
-  }
-  &--one {
+    @include d {
+      order: -2;
+      width: 475px;
+      margin-bottom: 14px;
+    }
   }
 }
 .add-plan__input-title,
@@ -144,13 +199,20 @@
   }
   @include d {
     order: 1;
+    margin: 0;
   }
 }
-
+.add-plan__input-title {
+  @include d {
+    width: 221px;
+  }
+}
 .add-plan__input-measure {
   opacity: 0.3;
   @include d {
     order: 3;
+    margin-left: 35px;
+    color: #1d2e5b;
   }
 }
 
@@ -159,6 +221,7 @@
   position: relative;
   @include d {
     order: 2;
+    width: 180px;
   }
 }
 .add-plan__input {
@@ -177,9 +240,6 @@
     height: 70px;
     font-size: 20px;
     line-height: 20px;
-  }
-  @include d {
-    width: 180px;
   }
 }
 
@@ -216,7 +276,8 @@
   @include d {
     width: 50%;
     text-align: right;
-    padding-top: 26px;
+    // padding-top: 26px;
+    margin: 0;
   }
 }
 
@@ -231,6 +292,9 @@
   line-height: 20px;
   font-weight: 500;
   text-transform: uppercase;
+  @include d {
+    margin: 0;
+  }
 }
 
 .add-plan__next-button {
@@ -346,10 +410,13 @@
 .step-one__month-button {
   background: url(../img/arrow-back.svg) center center / 14px 21px no-repeat;
   @include but;
-
-  &--back {
-    background: url(../img/arrow-back.svg) center center / 14px 21px no-repeat;
+  @include t {
+    background: url(../img/arrow-back.svg) center center / 19px 34px no-repeat;
   }
+  @include d {
+    background: url(../img/arrow-back.svg) center center / 16px 28px no-repeat;
+  }
+
   &--next {
     background-image: url(../img/arrow-next.svg);
   }
@@ -357,8 +424,12 @@
 
 .calendar {
   margin-bottom: 22px;
+  border-spacing: 0px;
   @include t {
     margin-bottom: 47px;
+  }
+  @include d {
+    margin-bottom: 57px;
   }
 }
 .calendar__header {
@@ -373,6 +444,10 @@
   font-weight: normal;
   @include t {
     width: 476px;
+  }
+  @include d {
+    width: 873px;
+    margin-bottom: 19px;
   }
 }
 
@@ -404,9 +479,15 @@
   @include t {
     width: 538px;
   }
+  @include d {
+    width: 1000px;
+  }
 }
 .first-row {
   border-top: 1px solid #d6d9e6;
+  @include d {
+    display: flex;
+  }
 }
 .calendar__cell {
   display: flex;
@@ -421,6 +502,12 @@
   @include t {
     width: 78px;
     height: 78px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+  @include d {
+    width: #{calc(1000px / 7)};
+    height: #{calc(427px / 6)};
     font-size: 18px;
     line-height: 18px;
   }
@@ -486,6 +573,9 @@
     line-height: 20px;
     margin-right: 52px;
   }
+  @include d {
+    width: 730px;
+  }
   &:nth-child(3) {
     width: 100%;
   }
@@ -499,7 +589,9 @@
     content: "";
     width: 50px;
     height: 42px;
-    // background-image: linear-gradient(to left, #fff, rgba(#fff, 0));
+  }
+  &--add-country {
+    background-color: #dfe3f0;
   }
 }
 
@@ -525,6 +617,16 @@
   margin-bottom: 25px;
   @include t {
     margin-bottom: 50px;
+  }
+  @include d {
+    padding-top: 62px;
+  }
+}
+
+.fun-country__list {
+  @include d {
+    padding-top: 80px;
+    margin-bottom: 36px;
   }
 }
 
@@ -570,6 +672,11 @@
     width: 500px;
     height: 140px;
   }
+
+  @include d {
+    width: 730px;
+    height: 142px;
+  }
 }
 
 .add-plan__button-wrapper {
@@ -581,8 +688,20 @@
   }
 }
 
-.add-plan__container {
-  include d {
-    padding: 0 60px;
+.add-plan__header {
+  @include d {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.step-one {
+  @include d {
+    margin-top: -230px;
+  }
+}
+.add-plan__text-wrapper--w581 {
+  @include d {
+    width: 581px;
   }
 }

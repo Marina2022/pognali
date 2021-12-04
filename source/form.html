@@ -236,32 +236,37 @@
 
       <section class="add-plan">
         <div class="container add-plan__container">
-          <h2 class="section-title section-title--form add-plan__title">
-            Добавить план
-          </h2>
-          <ul class="add-plan__top-nav top-nav no-style">
-            <li class="top-nav__item top-nav__item--active">
-              <span class="desktop-hidden top-nav__circle"></span>
-              <span class="desktop-visible">Даты</span>
-            </li>
-            <li class="top-nav__item">
-              <span class="desktop-hidden top-nav__circle"></span
-              ><span class="desktop-visible">Маршрут</span>
-            </li>
-            <li class="top-nav__item">
-              <span class="desktop-hidden top-nav__circle"></span
-              ><span class="desktop-visible">Развлечения</span>
-            </li>
-          </ul>
+          <div class="add-plan__header">
+            <h2 class="section-title section-title--form add-plan__title">
+              Добавить план
+            </h2>
+            <ul class="add-plan__top-nav top-nav no-style">
+              <li class="top-nav__item top-nav__item--active">
+                <span class="desktop-hidden top-nav__circle"></span>
+                <span class="desktop-visible">Даты</span>
+              </li>
+              <li class="top-nav__item">
+                <span class="desktop-hidden top-nav__circle"></span
+                ><span class="desktop-visible">Маршрут</span>
+              </li>
+              <li class="top-nav__item">
+                <span class="desktop-hidden top-nav__circle"></span
+                ><span class="desktop-visible">Развлечения</span>
+              </li>
+            </ul>
+          </div>
 
           <form action="#" class="add-plan__form add-plan-form">
             <fieldset class="add-plan__fieldset step-one">
               <div class="step-one__header">
                 <h3 class="fieldset-title">Шаг 1.<br />Даты пребывания</h3>
-                <p class="add-plan__text">
-                  Укажите предпочтительное количество попутчиков, которых вы
-                  хотели бы позвать в поездку, и ее предполагаемую длительность.
-                </p>
+                <div class="add-plan__text">
+                  <div class="add-plan__text-wrapper--w581">
+                    Укажите предпочтительное количество попутчиков, которых вы
+                    хотели бы позвать в поездку, и ее предполагаемую
+                    длительность.
+                  </div>
+                </div>
               </div>
               <div class="step-one__companions-wrapper">
                 <div
@@ -447,10 +452,10 @@
             <fieldset class="add-plan__fieldset step-two">
               <div class="step-one__header">
                 <h3 class="fieldset-title">Шаг 2. <br />Маршрут</h3>
-                <p class="add-plan__text">
+                <div class="add-plan__text">
                   Укажите страны, которые вы хотели бы посетить. Это может быть
                   одна или сразу несколько.
-                </p>
+                </div>
               </div>
               <ul class="select-country__list no-style">
                 <li class="select-country__item">
@@ -505,7 +510,11 @@
                     select-country__item--add
                   "
                 >
-                  <div class="select-country__input">
+                  <div
+                    class="
+                      select-country__input select-country__input--add-country
+                    "
+                  >
                     <span class="country-name">Добавить страну</span
                     ><button
                       class="
@@ -523,10 +532,10 @@
             <fieldset class="add-plan__fieldset step-three">
               <div class="step-one__header">
                 <h3 class="fieldset-title">Шаг 3. <br />Развлечения</h3>
-                <p class="add-plan__text">
+                <div class="add-plan__text">
                   Наконец, расскажите о своих планах времяпровождения. Можно
                   писать в свободной форме и ставить тэги.
-                </p>
+                </div>
               </div>
               <ul class="fun-country__list no-style">
                 <li class="fun__country fun__country--current">
@@ -576,11 +585,73 @@
           </form>
         </div>
       </section>
-      <!-- <section class="popup">
-        <h3 class="popur__title">Выберите страну</h3>
-        <button class="popup__close-button"></button>
-        <ul class="popup-letters">
-          <li class="popup-letters__item">
+    </main>
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="main-footer__logo logo">
+            <a href="#" class="logo__link">
+              <picture>
+                <source
+                  media="(min-width:1440px)"
+                  srcset="img/logo/logo-desktop-footer.png"
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="img/logo/logo-tablet-footer.png"
+                />
+
+                <img
+                  src="img/logo/logo-mobile-menu-open.png"
+                  alt=""
+                  class="logo__img"
+                />
+              </picture>
+            </a>
+          </div>
+
+          <ul class="footer__socials socials no-style">
+            <li class="socials__item socials__item--yellow-round">
+              <a href="" class="socials__link"
+                ><img
+                  src="img/icons/icon_fb.svg"
+                  alt=""
+                  class="socials__img socials__img--fb"
+              /></a>
+            </li>
+            <li class="socials__item socials__item--yellow-round">
+              <a href="" class="socials__link"
+                ><img
+                  src="img/icons/icon_vk.svg"
+                  alt=""
+                  class="socials__img socials__img--vk"
+              /></a>
+            </li>
+            <li class="socials__item socials__item--yellow-round">
+              <a href="" class="socials__link"
+                ><img
+                  src="img/icons/icon_insta.svg"
+                  alt=""
+                  class="socials__img socials__img--insta"
+              /></a>
+            </li>
+          </ul>
+          <div class="copyright">
+            <span class="copyright__text">Разработано</span>
+            <img class="copyright__img" src="img/logo/html-logo.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <section class="form-popup">
+      <div class="form-popup__header">
+        <h3 class="form-popup__title">Выберите страну</h3>
+        <button class="form-popup__close-button"></button>
+      </div>
+      <div class="form-popup__wrapper">
+        <ul class="popup-letters no-style">
+          <li class="popup-letters__item popup-letters__item--active">
             <a href="" class="popup-letters__link">А</a>
           </li>
           <li class="popup-letters__item">
@@ -660,7 +731,7 @@
             <a href="" class="popup-letters__link">Я</a>
           </li>
         </ul>
-        <ul class="popup-countries">
+        <ul class="popup-countries no-style">
           <li class="popup-countries__item">
             <a href="#" class="popup-country-link">Афганистан</a>
           </li>
@@ -689,64 +760,7 @@
             <a href="#" class="popup-country-link">Азербайджан</a>
           </li>
         </ul>
-      </section> -->
-    </main>
-    <footer class="main-footer">
-      <div class="container">
-        <div class="footer-wrapper">
-          <div class="main-footer__logo logo">
-            <a href="#" class="logo__link">
-              <picture>
-                <source
-                  media="(min-width:1440px)"
-                  srcset="img/logo/logo-desktop-footer.png"
-                />
-                <source
-                  media="(min-width:768px)"
-                  srcset="img/logo/logo-tablet-footer.png"
-                />
-
-                <img
-                  src="img/logo/logo-mobile-menu-open.png"
-                  alt=""
-                  class="logo__img"
-                />
-              </picture>
-            </a>
-          </div>
-
-          <ul class="footer__socials socials no-style">
-            <li class="socials__item socials__item--yellow-round">
-              <a href="" class="socials__link"
-                ><img
-                  src="img/icons/icon_fb.svg"
-                  alt=""
-                  class="socials__img socials__img--fb"
-              /></a>
-            </li>
-            <li class="socials__item socials__item--yellow-round">
-              <a href="" class="socials__link"
-                ><img
-                  src="img/icons/icon_vk.svg"
-                  alt=""
-                  class="socials__img socials__img--vk"
-              /></a>
-            </li>
-            <li class="socials__item socials__item--yellow-round">
-              <a href="" class="socials__link"
-                ><img
-                  src="img/icons/icon_insta.svg"
-                  alt=""
-                  class="socials__img socials__img--insta"
-              /></a>
-            </li>
-          </ul>
-          <div class="copyright">
-            <span class="copyright__text">Разработано</span>
-            <img class="copyright__img" src="img/logo/html-logo.svg" alt="" />
-          </div>
-        </div>
       </div>
-    </footer>
+    </section>
   </body>
 </html>
