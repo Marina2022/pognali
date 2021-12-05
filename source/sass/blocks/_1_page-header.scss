@@ -11,7 +11,8 @@
   @media (min-width: $desktop) {
     background-color: $blue-dark;
   }
-  &--form {
+  &--form,
+  &--catalog {
     background-color: #192144;
   }
 }

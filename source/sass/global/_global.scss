@@ -184,3 +184,9 @@ p {
   stroke-dashoffset: 2;
   transform: rotate(-84deg);
 }
+
+.mobile-hidden {
+  @media (max-width: 320px) {
+    display: none;
+  }
+}

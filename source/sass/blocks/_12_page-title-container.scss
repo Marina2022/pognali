@@ -2,7 +2,7 @@
   padding-top: 60px;
   padding-bottom: 9px;
   padding-left: 25px;
-  background-color: $blue-dark;
+  background-color: #182044;
   @include t {
     background-color: #182044;
     padding-top: 124px;
@@ -37,5 +37,34 @@
     font-size: 60px;
     line-height: 60px;
     padding-bottom: 62px;
+  }
+}
+
+.catalog-header__back-link {
+  @include t {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 156px;
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      right: -57px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 32px;
+      height: 16px;
+      background: url(../img/toMainArrow.svg) center center/32px 13px no-repeat;
+    }
+  }
+  @include d {
+    margin-left: 727px;
+    &:before {
+      background: url(../img/toMainArrow.svg) center center/32px 16px no-repeat;
+    }
   }
 }
