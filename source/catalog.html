@@ -36,13 +36,13 @@
           </div>
           <ul class="header__site-menu site-menu__list no-style">
             <li class="site-menu__item">
-              <a href="#" class="site-menu__link">О сервисе</a>
+              <a href="index.html" class="site-menu__link">О сервисе</a>
             </li>
             <li class="site-menu__item">
               <a href="form.html" class="site-menu__link">Направления</a>
             </li>
             <li class="site-menu__item">
-              <a href="catalog.html" class="site-menu__link">Попутчики</a>
+              <a class="site-menu__link">Попутчики</a>
             </li>
           </ul>
           <div class="user-nav header__user-nav">
@@ -818,349 +818,809 @@
       </section>
       <section class="catalog">
         <div class="container">
-          <ul class="catalog__list no-style">
-            <li class="catalog__item catalog-item">
-              <img class="catalog-item__photo" src="" alt="" />
-              <div class="catalog-item__desc">
+          <div class="catalog-big-wrapper">
+            <form action="#" class="catalog__form catalog-form">
+              <h2 class="catalog-form__title">
+                Подберите идеального попутчика
+              </h2>
+              <h3 class="catalog-form__subtitle">Хобби:</h3>
+              <ul class="catalog-form__checklist no-style">
+                <li class="catalog-form__checkitem">
+                  <input class="catalog-form__check-input" type="checkbox" />
+                  <label for="" class="catalog-form__check-label"
+                    >Спортзал</label
+                  >
+                </li>
+                <li class="catalog-form__checkitem">
+                  <input class="catalog-form__check-input" type="checkbox" />
+                  <label for="" class="catalog-form__check-label">Кальян</label>
+                </li>
+                <li class="catalog-form__checkitem">
+                  <input class="catalog-form__check-input" type="checkbox" />
+                  <label for="" class="catalog-form__check-label">Диван</label>
+                </li>
+              </ul>
+              <h3 class="catalog-form__subtitle">Музыка:</h3>
+              <ul class="catalog-form__checklist no-style">
+                <li class="catalog-form__checkitem">
+                  <input class="catalog-form__check-input" type="checkbox" />
+                  <label for="" class="catalog-form__check-label"
+                    >Тяжелый рок</label
+                  >
+                </li>
+                <li class="catalog-form__checkitem">
+                  <input class="catalog-form__check-input" type="checkbox" />
+                  <label for="" class="catalog-form__check-label"
+                    >Русский рэп</label
+                  >
+                </li>
+                <li class="catalog-form__checkitem">
+                  <input class="catalog-form__check-input" type="checkbox" />
+                  <label for="" class="catalog-form__check-label"
+                    >Евроденс</label
+                  >
+                </li>
+              </ul>
+              <h3 class="catalog-form__subtitle">Еда:</h3>
+              <ul class="catalog-form__checklist no-style">
+                <li class="catalog-form__checkitem">
+                  <input class="catalog-form__check-input" type="checkbox" />
+                  <label for="" class="catalog-form__check-label">Мясоед</label>
+                </li>
+                <li class="catalog-form__checkitem">
+                  <input class="catalog-form__check-input" type="checkbox" />
+                  <label for="" class="catalog-form__check-label"
+                    >Сидит на ПП</label
+                  >
+                </li>
+                <li class="catalog-form__checkitem">
+                  <input class="catalog-form__check-input" type="checkbox" />
+                  <label for="" class="catalog-form__check-label"
+                    >Веган-сыроед</label
+                  >
+                </li>
+              </ul>
+              <h3
+                class="catalog-form__subtitle catalog-form__subtitle--transport"
+              >
+                Транспорт:
+              </h3>
+
+              <ul
+                class="
+                  catalog-form__transport-list
+                  catalog-form__transport-list--border
+                  transport-list
+                  no-style
+                "
+              >
+                <li
+                  class="
+                    transport-list__item
+                    transport-list__item--form
+                    transport-list__item--active
+                  "
+                >
+                  <img src="img/icons/transport-1.svg" alt="" />
+                </li>
+                <li
+                  class="
+                    transport-list__item
+                    transport-list__item--form
+                    transport-list__item--active
+                  "
+                >
+                  <img
+                    src="img/icons/transport-2.svg"
+                    alt=""
+                    class="transport-list__icon"
+                  />
+                </li>
+                <li class="transport-list__item transport-list__item--form">
+                  <img
+                    src="img/icons/transport-3.svg"
+                    alt=""
+                    class="transport-list__icon"
+                  />
+                </li>
+
+                <li
+                  class="
+                    transport-list__item
+                    transport-list__item--form
+                    transport-list__item--active
+                  "
+                >
+                  <img
+                    src="img/icons/transport-4.svg"
+                    alt=""
+                    class="transport-list__icon"
+                  />
+                </li>
+              </ul>
+              <div class="catalog-form__level-wrapper">
+                <h3
+                  class="catalog-form__subtitle catalog-form__subtitle--level"
+                >
+                  Левел:
+                </h3>
+                <div class="catalog-form__level-numbers">
+                  <div class="catalog-form__level-number">30</div>
+                  <div class="catalog-form__level-number">100</div>
+                  <div class="catalog-form__level-dash-wrapper">
+                    <div class="catalog-form__level-dash"></div>
+                  </div>
+                </div>
+                <div class="catalog-form__scale-gray">
+                  <div class="catalog-form__scale-blue"></div>
+                </div>
+              </div>
+              <button class="catalog-form__button">Показать</button>
+            </form>
+            <ul class="catalog__list no-style">
+              <li class="catalog__item catalog-item">
+                <picture class="catalog-item__photo">
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="img/catalog-photos/photo1-desktop.png"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="img/catalog-photos/photo1-tablet.png"
+                  />
+                  <img src="img/catalog-photos/photo1-mobile.png" alt="" />
+                </picture>
+
                 <h3 class="catalog-item__name catalog-item__name--green">
                   Таня Фирсова
                 </h3>
+                <div class="catalog-item__likes">
+                  <button class="catalog-item__like-button"></button>
+                  <span class="catalog-item__likes-number">1.5 M </span>
+                </div>
                 <div class="catalog-item__tags">
                   #ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи
                 </div>
-                <div class="catalog-item__icons-block">
-                  <div class="transport-legend">транспорт:</div>
-                  <ul class="catalog-item__icons-list">
-                    <li class="catalog-item__item">
-                      <img
-                        src=""
-                        alt=""
-                        class="catalog-item__icon catalog-item__icon--active"
-                      />
-                    </li>
-                    <li class="catalog-item__item">
-                      <img
-                        src=""
-                        alt=""
-                        class="catalog-item__icon catalog-item__icon--active"
-                      />
-                    </li>
-                    <li class="catalog-item__item">
-                      <img src="" alt="" class="catalog-item__icon" />
-                    </li>
 
-                    <li class="catalog-item__item">
+                <div class="catalog-item__flags-block">
+                  <span class="catalog-item__want">хочет посетить:</span>
+                  <ul class="catalog__flags no-style">
+                    <li class="catalog__flag">
                       <img
-                        src=""
+                        src="img/flags/catalog-flag1-1.svg"
                         alt=""
-                        class="catalog-item__icon catalog-item__icon--active"
+                        class="catalog__flag-img"
                       />
+                      <span class="catalog__flag-name">шри-ланка</span>
+                    </li>
+                    <li class="catalog__flag">
+                      <img
+                        src="img/flags/catalog-flag1-2.svg"
+                        alt=""
+                        class="catalog__flag-img"
+                      />
+                      <span class="catalog__flag-name">Таиланд</span>
+                    </li>
+                    <li class="catalog__flag">
+                      <img
+                        src="img/flags/catalog-flag1-3.svg"
+                        alt=""
+                        class="catalog__flag-img"
+                      />
+                      <span class="catalog__flag-name">сейшелы</span>
                     </li>
                   </ul>
-                  <div class="level-legend">транспорт:</div>
-                  <div class="progress">
-                    <span class="progress__namber">80</span>
-                    <span class="progress__level">level</span>
-                    <div class="progress">
-                      <span class="progress__namber">80</span>
-                      <span class="progress__level">level</span>
-                      <img
-                        class="progress-img progress-bar--80p"
-                        src="img/circle.svg"
-                        alt=""
-                      />
+                </div>
+
+                <div class="catalog-item__transport-block">
+                  <div class="transport-part">
+                    <div class="level-part__legend">транспорт</div>
+                    <ul
+                      class="
+                        catalog-item__transport-list
+                        transport-list
+                        no-style
+                      "
+                    >
+                      <li
+                        class="
+                          transport-list__item
+                          transport-list__item--form
+                          transport-list__item--active
+                        "
+                      >
+                        <img src="img/icons/transport-1.svg" alt="" />
+                      </li>
+                      <li
+                        class="transport-list__item transport-list__item--form"
+                      >
+                        <img
+                          src="img/icons/transport-2.svg"
+                          alt=""
+                          class="transport-list__icon"
+                        />
+                      </li>
+                      <li
+                        class="transport-list__item transport-list__item--form"
+                      >
+                        <img
+                          src="img/icons/transport-3.svg"
+                          alt=""
+                          class="transport-list__icon"
+                        />
+                      </li>
+
+                      <li
+                        class="transport-list__item transport-list__item--form"
+                      >
+                        <img
+                          src="img/icons/transport-4.svg"
+                          alt=""
+                          class="transport-list__icon"
+                        />
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="level-part">
+                    <div class="level-part__legend">левел</div>
+                    <div class="progress catalog-item__progress">
+                      <span class="progress__number">99</span>
+                      <span
+                        class="progress__level catalog-item__progress__level"
+                        >level</span
+                      >
+                      <svg
+                        class="
+                          progress__img
+                          catalog-item__progress__img
+                          progress-bar--99p
+                        "
+                        width="60"
+                        height="60"
+                        viewBox="0 0 60 60"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle
+                          class="catalog-item__circle"
+                          cx="30"
+                          cy="30"
+                          r="28"
+                          fill="none"
+                          fill-opacity="0.6"
+                          stroke="#FF8D30"
+                          stroke-width="4"
+                          stroke-linecap="round"
+                        />
+                      </svg>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="catalog-item__flags-block">
-                <span class="catalog-item__want">хочет посетить:</span>
-                <ul class="catalog__flags">
-                  <li class="catalog__flag">
-                    <img src="" alt="" class="catalog__flag-img" />
-                    <span class="catalog__flag-name">шри-ланка</span>
-                  </li>
-                  <li class="catalog__flag">
-                    <img src="" alt="" class="catalog__flag-img" />
-                    <span class="catalog__flag-name">Таиланд</span>
-                  </li>
-                  <li class="catalog__flag">
-                    <img src="" alt="" class="catalog__flag-img" />
-                    <span class="catalog__flag-name">сейшелы</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="catalog-item__buttons-block">
-                <a href="#" class="button">Позвать! </a>
-                <button class="like-button"></button>
-                <span class="likes-number">1.5 M </span>
-              </div>
-            </li>
-            <li class="catalog__item catalog-item">
-              <img class="catalog-item__photo" src="" alt="" />
-              <div class="catalog-item__desc">
+
+                <a href="#" class="button catalog-item__button">Позвать! </a>
+              </li>
+              <li class="catalog__item catalog-item">
+                <picture class="catalog-item__photo">
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="img/catalog-photos/photo2-desktop.png"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="img/catalog-photos/photo2-tablet.png"
+                  />
+                  <img src="img/catalog-photos/photo2-mobile.png" alt="" />
+                </picture>
+
                 <h3 class="catalog-item__name catalog-item__name--green">
                   Петя Демин
                 </h3>
+                <div class="catalog-item__likes">
+                  <button class="catalog-item__like-button"></button>
+                  <span class="catalog-item__likes-number">1500 </span>
+                </div>
                 <div class="catalog-item__tags">
                   #бургер #бар #футбол #концерт #крафт
                 </div>
-                <div class="catalog-item__icons-block">
-                  <div class="transport-legend">транспорт:</div>
-                  <ul class="catalog-item__icons-list icons-list">
-                    <li class="icons-list__item">
-                      <img
-                        src=""
-                        alt=""
-                        class="icons-list__icon icons-list__icon--active"
-                      />
-                    </li>
-                    <li class="icons-list__item">
-                      <img
-                        src=""
-                        alt=""
-                        class="icons-list__icon icons-list__icon--active"
-                      />
-                    </li>
-                    <li class="icons-list__item">
-                      <img src="" alt="" class="icons-list__icon" />
-                    </li>
 
-                    <li class="icons-list__item">
+                <div class="catalog-item__flags-block">
+                  <span class="catalog-item__want">хочет посетить:</span>
+                  <ul class="catalog__flags no-style">
+                    <li class="catalog__flag">
                       <img
-                        src=""
+                        src="img/flags/catalog-flag2-1.svg"
                         alt=""
-                        class="icons-list__icon icons-list__icon--active"
+                        class="catalog__flag-img"
                       />
+                      <span class="catalog__flag-name">бельгия</span>
+                    </li>
+                    <li class="catalog__flag">
+                      <img
+                        src="img/flags/catalog-flag2-2.svg"
+                        alt=""
+                        class="catalog__flag-img"
+                      />
+                      <span class="catalog__flag-name">Чехия</span>
                     </li>
                   </ul>
-                  <div class="level-legend">транспорт:</div>
-                  <div class="progress">
-                    <span class="progress__namber">80</span>
-                    <span class="progress__level">level</span>
-                    <img
-                      class="progress-img progress-bar--80p"
-                      src="img/circle.svg"
-                      alt=""
-                    />
+                </div>
+
+                <div class="catalog-item__transport-block">
+                  <div class="transport-part">
+                    <div class="level-part__legend">транспорт</div>
+                    <ul
+                      class="
+                        catalog-item__transport-list
+                        transport-list
+                        no-style
+                      "
+                    >
+                      <li
+                        class="
+                          transport-list__item
+                          transport-list__item--form
+                          transport-list__item--active
+                        "
+                      >
+                        <img src="img/icons/transport-1.svg" alt="" />
+                      </li>
+                      <li
+                        class="
+                          transport-list__item
+                          transport-list__item--form
+                          transport-list__item--active
+                        "
+                      >
+                        <img
+                          src="img/icons/transport-2.svg"
+                          alt=""
+                          class="transport-list__icon"
+                        />
+                      </li>
+                      <li
+                        class="transport-list__item transport-list__item--form"
+                      >
+                        <img
+                          src="img/icons/transport-3.svg"
+                          alt=""
+                          class="transport-list__icon"
+                        />
+                      </li>
+
+                      <li
+                        class="
+                          transport-list__item
+                          transport-list__item--form
+                          transport-list__item--active
+                        "
+                      >
+                        <img
+                          src="img/icons/transport-4.svg"
+                          alt=""
+                          class="transport-list__icon"
+                        />
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="level-part">
+                    <div class="level-part__legend">левел</div>
+                    <div class="progress catalog-item__progress">
+                      <span class="progress__number">80</span>
+                      <span
+                        class="progress__level catalog-item__progress__level"
+                        >level</span
+                      >
+                      <svg
+                        class="
+                          progress__img
+                          catalog-item__progress__img
+                          progress-bar--80p
+                        "
+                        width="60"
+                        height="60"
+                        viewBox="0 0 60 60"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle
+                          class="catalog-item__circle"
+                          cx="30"
+                          cy="30"
+                          r="28"
+                          fill="none"
+                          fill-opacity="0.6"
+                          stroke="#FF8D30"
+                          stroke-width="4"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="catalog-item__flags-block">
-                <span class="catalog-item__want">хочет посетить:</span>
-                <ul class="catalog__flags">
-                  <li class="catalog__flag">
-                    <img src="" alt="" class="catalog__flag-img" />
-                    <span class="catalog__flag-name">бельгия</span>
-                  </li>
-                  <li class="catalog__flag">
-                    <img src="" alt="" class="catalog__flag-img" />
-                    <span class="catalog__flag-name">чехия</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="catalog-item__buttons-block">
-                <a href="#" class="button">Позвать! </a>
-                <button class="like-button"></button>
-                <span class="likes-number">23 </span>
-              </div>
-            </li>
-            <li class="catalog__item catalog-item">
-              <img class="catalog-item__photo" src="" alt="" />
-              <div class="catalog-item__desc">
+
+                <a href="#" class="button catalog-item__button">Позвать! </a>
+              </li>
+
+              <li class="catalog__item catalog-item">
+                <picture class="catalog-item__photo">
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="img/catalog-photos/photo3-desktop.png"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="img/catalog-photos/photo3-tablet.png"
+                  />
+                  <img src="img/catalog-photos/photo3-mobile.png" alt="" />
+                </picture>
+
                 <h3 class="catalog-item__name catalog-item__name--green">
                   Марк Смолов
                 </h3>
+                <div class="catalog-item__likes">
+                  <button class="catalog-item__like-button"></button>
+                  <span class="catalog-item__likes-number">170</span>
+                </div>
                 <div class="catalog-item__tags">
                   #рэп #тату #хайпбист #кроссовки #суприм
                 </div>
-                <div class="catalog-item__icons-block">
-                  <div class="transport-legend">транспорт:</div>
-                  <ul class="catalog-item__icons-list">
-                    <li class="catalog-item__item">
-                      <img
-                        src=""
-                        alt=""
-                        class="catalog-item__icon catalog-item__icon--active"
-                      />
-                    </li>
-                    <li class="catalog-item__item">
-                      <img
-                        src=""
-                        alt=""
-                        class="catalog-item__icon catalog-item__icon--active"
-                      />
-                    </li>
-                    <li class="catalog-item__item">
-                      <img src="" alt="" class="catalog-item__icon" />
-                    </li>
 
-                    <li class="catalog-item__item">
+                <div class="catalog-item__flags-block">
+                  <span class="catalog-item__want">хочет посетить:</span>
+                  <ul class="catalog__flags no-style">
+                    <li class="catalog__flag">
                       <img
-                        src=""
+                        src="img/flags/catalog-flag3-1.svg"
                         alt=""
-                        class="catalog-item__icon catalog-item__icon--active"
+                        class="catalog__flag-img"
                       />
+                      <span class="catalog__flag-name">США</span>
+                    </li>
+                    <li class="catalog__flag">
+                      <img
+                        src="img/flags/catalog-flag3-2.svg"
+                        alt=""
+                        class="catalog__flag-img"
+                      />
+                      <span class="catalog__flag-name">Австралия</span>
+                    </li>
+                    <li class="catalog__flag">
+                      <img
+                        src="img/flags/catalog-flag3-3.svg"
+                        alt=""
+                        class="catalog__flag-img"
+                      />
+                      <span class="catalog__flag-name">Доминикана</span>
                     </li>
                   </ul>
-                  <div class="level-legend">транспорт:</div>
-                  <div class="progress">
-                    <span class="progress__namber">80</span>
-                    <span class="progress__level">level</span>
-                    <img
-                      class="progress-img progress-bar--80p"
-                      src="img/circle.svg"
-                      alt=""
-                    />
+                </div>
+
+                <div class="catalog-item__transport-block">
+                  <div class="transport-part">
+                    <div class="level-part__legend">транспорт</div>
+                    <ul
+                      class="
+                        catalog-item__transport-list
+                        transport-list
+                        no-style
+                      "
+                    >
+                      <li
+                        class="
+                          transport-list__item
+                          transport-list__item--form
+                          transport-list__item--active
+                        "
+                      >
+                        <img src="img/icons/transport-1.svg" alt="" />
+                      </li>
+                      <li
+                        class="transport-list__item transport-list__item--form"
+                      >
+                        <img
+                          src="img/icons/transport-2.svg"
+                          alt=""
+                          class="transport-list__icon"
+                        />
+                      </li>
+                      <li
+                        class="
+                          transport-list__item
+                          transport-list__item--form
+                          transport-list__item--active
+                        "
+                      >
+                        <img
+                          src="img/icons/transport-3.svg"
+                          alt=""
+                          class="transport-list__icon"
+                        />
+                      </li>
+
+                      <li
+                        class="transport-list__item transport-list__item--form"
+                      >
+                        <img
+                          src="img/icons/transport-4.svg"
+                          alt=""
+                          class="transport-list__icon"
+                        />
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="level-part">
+                    <div class="level-part__legend">левел</div>
+                    <div class="progress catalog-item__progress">
+                      <span class="progress__number">80</span>
+                      <span
+                        class="progress__level catalog-item__progress__level"
+                        >level</span
+                      >
+                      <svg
+                        class="
+                          progress__img
+                          catalog-item__progress__img
+                          progress-bar--80p
+                        "
+                        width="60"
+                        height="60"
+                        viewBox="0 0 60 60"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle
+                          class="catalog-item__circle"
+                          cx="30"
+                          cy="30"
+                          r="28"
+                          fill="none"
+                          fill-opacity="0.6"
+                          stroke="#FF8D30"
+                          stroke-width="4"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="catalog-item__flags-block">
-                <span class="catalog-item__want">хочет посетить:</span>
-                <ul class="catalog__flags">
-                  <li class="catalog__flag">
-                    <img src="" alt="" class="catalog__flag-img" />
-                    <span class="catalog__flag-name">сша</span>
-                  </li>
-                  <li class="catalog__flag">
-                    <img src="" alt="" class="catalog__flag-img" />
-                    <span class="catalog__flag-name">австралия</span>
-                  </li>
-                  <li class="catalog__flag">
-                    <img src="" alt="" class="catalog__flag-img" />
-                    <span class="catalog__flag-name">доминика</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="catalog-item__buttons-block">
-                <a href="#" class="button">Позвать! </a>
-                <button class="like-button"></button>
-                <span class="likes-number">170 </span>
-              </div>
-            </li>
-            <li class="catalog__item catalog-item">
-              <img class="catalog-item__photo" src="" alt="" />
-              <div class="catalog-item__desc">
+
+                <a href="#" class="button catalog-item__button">Позвать! </a>
+              </li>
+
+              <li class="catalog__item catalog-item">
+                <picture class="catalog-item__photo">
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="img/catalog-photos/photo4-desktop.png"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="img/catalog-photos/photo4-tablet.png"
+                  />
+                  <img src="img/catalog-photos/photo4-mobile.png" alt="" />
+                </picture>
+
                 <h3 class="catalog-item__name catalog-item__name--green">
                   Лариса Роговая
                 </h3>
+                <div class="catalog-item__likes">
+                  <button class="catalog-item__like-button"></button>
+                  <span class="catalog-item__likes-number">23</span>
+                </div>
                 <div class="catalog-item__tags">
                   #образование #карьера #учеба #линкедин
                 </div>
-                <div class="catalog-item__icons-block">
-                  <div class="transport-legend">транспорт:</div>
-                  <ul class="catalog-item__icons-list">
-                    <li class="catalog-item__item">
-                      <img
-                        src=""
-                        alt=""
-                        class="catalog-item__icon catalog-item__icon--active"
-                      />
-                    </li>
-                    <li class="catalog-item__item">
-                      <img
-                        src=""
-                        alt=""
-                        class="catalog-item__icon catalog-item__icon--active"
-                      />
-                    </li>
-                    <li class="catalog-item__item">
-                      <img src="" alt="" class="catalog-item__icon" />
-                    </li>
 
-                    <li class="catalog-item__item">
+                <div class="catalog-item__flags-block">
+                  <span class="catalog-item__want">хочет посетить:</span>
+                  <ul class="catalog__flags no-style">
+                    <li class="catalog__flag">
                       <img
-                        src=""
+                        src="img/flags/catalog-flag4-1.svg"
                         alt=""
-                        class="catalog-item__icon catalog-item__icon--active"
+                        class="catalog__flag-img"
                       />
+                      <span class="catalog__flag-name">Великобритания</span>
+                    </li>
+                    <li class="catalog__flag">
+                      <img
+                        src="img/flags/catalog-flag4-2.svg"
+                        alt=""
+                        class="catalog__flag-img"
+                      />
+                      <span class="catalog__flag-name">Германия</span>
                     </li>
                   </ul>
-                  <div class="level-legend">транспорт:</div>
-                  <img
-                    class="progress-bar progress-bar--80p"
-                    src="img/circle.svg"
-                    alt=""
-                  />
                 </div>
-              </div>
-              <div class="catalog-item__flags-block">
-                <span class="catalog-item__want">хочет посетить:</span>
-                <ul class="catalog__flags">
-                  <li class="catalog__flag">
-                    <img src="" alt="" class="catalog__flag-img" />
-                    <span class="catalog__flag-name">Великобритания</span>
-                  </li>
-                  <li class="catalog__flag">
-                    <img src="" alt="" class="catalog__flag-img" />
-                    <span class="catalog__flag-name">Германия</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="catalog-item__buttons-block">
-                <a href="#" class="button">Позвать! </a>
-                <button class="like-button"></button>
-                <span class="likes-number">23</span>
-              </div>
-            </li>
-          </ul>
-          <a href="#" class="catalog__more-button">Показать еще</a>
-          <div class="catalog__pagination pagination">
-            <ul class="gapination__list">
-              <li class="pagination__item">
-                <a href="#" class="pagination__link">1</a>
-              </li>
-              <li class="pagination__item">
-                <a href="#" class="pagination__link">2</a>
-              </li>
-              <li class="pagination__item">
-                <a href="#" class="pagination__link">3</a>
-              </li>
-              <li class="pagination__item">
-                <a href="#" class="pagination__link">4</a>
+
+                <div class="catalog-item__transport-block">
+                  <div class="transport-part">
+                    <div class="level-part__legend">транспорт</div>
+                    <ul
+                      class="
+                        catalog-item__transport-list
+                        transport-list
+                        no-style
+                      "
+                    >
+                      <li
+                        class="
+                          transport-list__item
+                          transport-list__item--form
+                          transport-list__item--active
+                        "
+                      >
+                        <img src="img/icons/transport-1.svg" alt="" />
+                      </li>
+                      <li
+                        class="
+                          transport-list__item
+                          transport-list__item--form
+                          transport-list__item--active
+                        "
+                      >
+                        <img
+                          src="img/icons/transport-2.svg"
+                          alt=""
+                          class="transport-list__icon"
+                        />
+                      </li>
+                      <li
+                        class="transport-list__item transport-list__item--form"
+                      >
+                        <img
+                          src="img/icons/transport-3.svg"
+                          alt=""
+                          class="transport-list__icon"
+                        />
+                      </li>
+
+                      <li
+                        class="transport-list__item transport-list__item--form"
+                      >
+                        <img
+                          src="img/icons/transport-4.svg"
+                          alt=""
+                          class="transport-list__icon"
+                        />
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="level-part">
+                    <div class="level-part__legend">левел</div>
+                    <div class="progress catalog-item__progress">
+                      <span class="progress__number">80</span>
+                      <span
+                        class="progress__level catalog-item__progress__level"
+                        >level</span
+                      >
+                      <svg
+                        class="
+                          progress__img
+                          catalog-item__progress__img
+                          progress-bar--80p
+                        "
+                        width="60"
+                        height="60"
+                        viewBox="0 0 60 60"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle
+                          class="catalog-item__circle"
+                          cx="30"
+                          cy="30"
+                          r="28"
+                          fill="none"
+                          fill-opacity="0.6"
+                          stroke="#FF8D30"
+                          stroke-width="4"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+
+                <a href="#" class="button catalog-item__button">Позвать! </a>
               </li>
             </ul>
-            <div class="pagination__buttons">
-              <a
-                href="#"
-                class="pagination__button pagination__prev-button"
-              ></a>
-              <a
-                href="#"
-                class="pagination__button pagination__next-button"
-              ></a>
+            <a href="#" class="catalog__more-button">Показать еще</a>
+            <div class="catalog__pagination pagination">
+              <ul class="gapination__list no-style">
+                <li class="pagination__item pagination__item--current">
+                  <a href="#" class="pagination__link">1</a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#" class="pagination__link"
+                    >2</a
+                  >
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#" class="pagination__link"
+                    >3</a
+                  >
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#" class="pagination__link"
+                    >4</a
+                  >
+                </li>
+              </ul>
+              <div class="pagination__buttons">
+                <a
+                  href=""
+                  class="pagination__button pagination__button--left"
+                ></a>
+                <a
+                  href=""
+                  class="pagination__button pagination__button--right"
+                ></a>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       <footer class="main-footer">
-        <div class="main-footer__logo logo">
-          <a href="#" class="logo__link"
-            ><img src="" alt="" class="logo__img"
-          /></a>
-        </div>
+        <div class="container">
+          <div class="footer-wrapper">
+            <div class="main-footer__logo logo">
+              <a href="#" class="logo__link">
+                <picture>
+                  <source
+                    media="(min-width:768px)"
+                    srcset="img/logo/logo-tablet-footer.png"
+                  />
+                  <source
+                    media="(min-width:1440px)"
+                    srcset="img/logo/logo-desktop-footer.png"
+                  />
 
-        <ul class="footer__socials socials">
-          <li class="socials__item socials__item--yellow-round">
-            <a href="" class="socials__link"
-              ><img src="" alt="" class="socials__img socials__img--fb"
-            /></a>
-          </li>
-          <li class="socials__item socials__item--yellow-round">
-            <a href="" class="socials__link"
-              ><img src="" alt="" class="socials__img socials__img--vk"
-            /></a>
-          </li>
-          <li class="socials__item socials__item--yellow-round">
-            <a href="" class="socials__link"
-              ><img src="" alt="" class="socials__img socials__img--insta"
-            /></a>
-          </li>
-        </ul>
-        <div class="copyright">
-          <span class="copyright__text">Разработано</span>
-          <img class="copyright__img" src="" alt="" />
+                  <img
+                    src="img/logo/logo-mobile-menu-open.png"
+                    alt=""
+                    class="logo__img"
+                  />
+                </picture>
+              </a>
+            </div>
+
+            <ul class="footer__socials socials no-style">
+              <li class="socials__item socials__item--yellow-round">
+                <a href="" class="socials__link"
+                  ><img
+                    src="img/icons/icon_fb.svg"
+                    alt=""
+                    class="socials__img socials__img--fb"
+                /></a>
+              </li>
+              <li class="socials__item socials__item--yellow-round">
+                <a href="" class="socials__link"
+                  ><img
+                    src="img/icons/icon_vk.svg"
+                    alt=""
+                    class="socials__img socials__img--vk"
+                /></a>
+              </li>
+              <li class="socials__item socials__item--yellow-round">
+                <a href="" class="socials__link"
+                  ><img
+                    src="img/icons/icon_insta.svg"
+                    alt=""
+                    class="socials__img socials__img--insta"
+                /></a>
+              </li>
+            </ul>
+            <div class="copyright">
+              <span class="copyright__text">Разработано</span>
+              <img class="copyright__img" src="img/logo/html-logo.svg" alt="" />
+            </div>
+          </div>
         </div>
       </footer>
     </main>

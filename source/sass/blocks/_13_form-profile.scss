@@ -191,8 +191,10 @@
   }
 }
 
-.form-profile__icons-list {
+.form-profile__transport-list {
   border: 1px #cbced9 solid;
+}
+.transport-list {
   border-radius: 10px;
   padding: 16px 0;
   display: flex;
@@ -207,7 +209,7 @@
   }
 }
 
-.icons-list__item--form {
+.transport-list__item--form {
   width: 34px;
   height: 34px;
   background-color: #fff;
